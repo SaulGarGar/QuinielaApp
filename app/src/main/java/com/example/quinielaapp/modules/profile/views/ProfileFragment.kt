@@ -28,5 +28,13 @@ class ProfileFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
+    companion object {
+        fun newInstance(): ProfileFragment {
 
+            val args = Bundle()
+            val fragment = ProfileFragment()
+            fragment.arguments = args
+            return fragment
+        }
+    }
 }

@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.example.quinielaapp.R
+import com.example.quinielaapp.modules.actualJourney.views.ActualJourneyFragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,5 +29,13 @@ class ResultsFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_results, container, false)
     }
 
+    companion object {
+        fun newInstance(): ResultsFragment {
 
+            val args = Bundle()
+            val fragment = ResultsFragment()
+            fragment.arguments = args
+            return fragment
+        }
+    }
 }

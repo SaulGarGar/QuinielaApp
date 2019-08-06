@@ -1,18 +1,15 @@
-package com.example.quinielaapp.modules.home.views
+package com.example.quinielaapp.modules.actualJourney.views
 
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 
 import com.example.quinielaapp.R
-import com.example.quinielaapp.modules.signIn.SignInActivity
 
-class HomeFragment : Fragment() {
+class ActualJourneyFragment : Fragment() {
 
 
 
@@ -21,7 +18,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        var view = inflater.inflate(R.layout.fragment_home, container, false)
+        var view = inflater.inflate(R.layout.fragment_actual_journey, container, false)
 
         initViews(view)
 
@@ -32,4 +29,13 @@ class HomeFragment : Fragment() {
 
     }
 
+    companion object {
+        fun newInstance(): ActualJourneyFragment {
+
+            val args = Bundle()
+            val fragment = ActualJourneyFragment()
+            fragment.arguments = args
+            return fragment
+        }
+    }
 }

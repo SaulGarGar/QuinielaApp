@@ -3,10 +3,9 @@ package com.example.quinielaapp.modules.logIn.views
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.TextView
 import com.example.quinielaapp.R
-import com.example.quinielaapp.modules.signIn.SignInActivity
+import com.example.quinielaapp.modules.signIn.SignUpActivity
 
 class LogInActivity : AppCompatActivity() {
 
@@ -23,7 +22,7 @@ class LogInActivity : AppCompatActivity() {
         SignUpTextView = findViewById(R.id.signup_text_view)
 
         SignUpTextView?.setOnClickListener {
-            val intent = Intent(baseContext, SignInActivity::class.java)
+            val intent = Intent(baseContext, SignUpActivity::class.java)
             startActivity(intent)
         }
     }
