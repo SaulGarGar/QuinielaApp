@@ -2,6 +2,7 @@ package com.example.quinielaapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import androidx.fragment.app.Fragment
 import com.example.quinielaapp.modules.actualJourney.views.ActualJourneyFragment
 import com.example.quinielaapp.modules.profile.views.ProfileFragment
@@ -48,5 +49,10 @@ class DashboardActivity : AppCompatActivity() {
         transaction.replace(R.id.main_container, fragment)
         transaction.addToBackStack(null)
         transaction.commit()
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onCreate(savedInstanceState, persistentState)
+
     }
 }
