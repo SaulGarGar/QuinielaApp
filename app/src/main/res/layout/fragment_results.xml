@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".modules.results.views.ResultsFragment">
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".modules.results.views.ResultsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Resultados"
-            android:layout_gravity="center"
-            android:textSize="30dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp">
 
-</FrameLayout>
+        <TextView
+                android:id="@+id/user_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resutados"
+                android:textSize="16sp"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="12dp"/>
+
+        <include layout="@layout/journey_item_recycer_view"/>
+        <include layout="@layout/journey_item_recycer_view"/>
+        <include layout="@layout/journey_item_recycer_view"/>
+        <include layout="@layout/journey_item_recycer_view"/>
+        <include layout="@layout/journey_item_recycer_view"/>
+        <include layout="@layout/journey_item_recycer_view"/>
+        <include layout="@layout/journey_item_recycer_view"/>
+        <include layout="@layout/journey_item_recycer_view"/>
+        <include layout="@layout/journey_item_recycer_view"/>
+        <include layout="@layout/journey_item_recycer_view"/>
+        <include layout="@layout/journey_item_recycer_view"/>
+
+    </LinearLayout>
+
+</ScrollView>
