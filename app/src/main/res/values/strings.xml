@@ -7,4 +7,6 @@
     <string name="profile">Perfil</string>
     <string name="results">Resultados</string>
     <string name="invalid_mail">El mail ingresado es inválido</string>
+    <string name="user_name_taked">El nombre de usuario ya está en uso, elige otro</string>
+    <string name="invalid_phone">El númerode teléfono es inválido</string>
 </resources>

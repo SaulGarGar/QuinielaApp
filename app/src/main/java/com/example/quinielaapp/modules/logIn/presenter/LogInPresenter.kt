@@ -9,9 +9,10 @@ import android.content.Context.MODE_PRIVATE
 import android.R.id.edit
 import android.content.SharedPreferences
 import com.example.quinielaapp.BuildConfig
+import com.example.quinielaapp.modules.sellerAdminModules.searchUsers.views.SearchUsersActivity
 
 
-class LogInPresenter(val view: Activity, val delegate: OnLoginEvent) {
+class LogInPresenter(private val view: Activity, private val delegate: OnLoginEvent) {
 
     fun validateData(email: String, password: String){
         if (email.validEmail()){
@@ -22,12 +23,12 @@ class LogInPresenter(val view: Activity, val delegate: OnLoginEvent) {
                     view.startActivity(intent)
                 }
                 "seller@gmail.com" -> {
-                    val intent = Intent(view.baseContext, DashboardActivity::class.java)
+                    val intent = Intent(view.baseContext, SearchUsersActivity::class.java)
                     setRolInSharedPreferences(2)
                     view.startActivity(intent)
                 }
                 "admin@gmail.com" -> {
-                    val intent = Intent(view.baseContext, DashboardActivity::class.java)
+                    val intent = Intent(view.baseContext, SearchUsersActivity::class.java)
                     setRolInSharedPreferences(3)
                     view.startActivity(intent)
                 }

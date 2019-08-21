@@ -11,6 +11,7 @@
             android:id="@+id/floating_search_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:elevation="2dp"
             app:floatingSearch_searchBarMarginLeft="12dp"
             app:floatingSearch_searchBarMarginTop="12dp"
             app:floatingSearch_searchBarMarginRight="12dp"
@@ -21,6 +22,7 @@
             app:floatingSearch_close_search_on_keyboard_dismiss="true"/>
 
     <com.google.android.material.button.MaterialButton
+            android:id="@+id/search_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
