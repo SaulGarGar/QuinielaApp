@@ -1,4 +1,3 @@
 package com.example.quinielaapp.models
 
-class User {
-}
+data class User(val name: String, val userName: String, val email: String, val rol: Int)

@@ -20,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".modules.signIn.SignUpActivity">
+        <activity android:name=".modules.signUp.views.SignUpActivity">
         </activity>
         <activity android:name=".DashboardActivity">
         </activity>

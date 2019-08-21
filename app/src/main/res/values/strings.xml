@@ -6,4 +6,5 @@
     <string name="actual_journey">Jornada actual</string>
     <string name="profile">Perfil</string>
     <string name="results">Resultados</string>
+    <string name="invalid_mail">El mail ingresado es inválido</string>
 </resources>

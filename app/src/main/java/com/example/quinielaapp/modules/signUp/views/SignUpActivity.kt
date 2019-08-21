@@ -1,4 +1,4 @@
-package com.example.quinielaapp.modules.signIn
+package com.example.quinielaapp.modules.signUp.views
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
